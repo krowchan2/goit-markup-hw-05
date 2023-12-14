@@ -422,19 +422,20 @@ img {
   display: flex;
   width: 360px;
   height: 420px;
-  padding-bottom: 0px;
+  padding-bottom: 32px;
   flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
   flex-shrink: 0;
   border: 1px solid var(--cornflower);
   background: var(--white);
-  position: relative;
 }
 
 .portfolio-figure {
   width: 100%;
   height: 420px;
   overflow: hidden;
+  position: relative;
 }
 
 .portfolio-figure img {
