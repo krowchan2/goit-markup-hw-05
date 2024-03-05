@@ -439,6 +439,7 @@ img {
 }
 
 .portfolio-figure img {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -452,7 +453,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 0 32px;
+  padding: 0 24px;
   color: var(--white);
   text-align: left;
   display: flex;
@@ -463,7 +464,7 @@ img {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
-  transition: property 1s;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 
