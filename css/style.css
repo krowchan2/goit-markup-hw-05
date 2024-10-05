@@ -28,6 +28,7 @@ h5,
 h6 {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
 }
 
 figure {
@@ -35,7 +36,7 @@ figure {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   background-color: var(--white);
 }
 
@@ -574,4 +575,46 @@ img {
 
 .footer-social-list-img {
   fill: var(--cloud);
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal.is-hidden {
+  display: none;
+}
+
+.modal-content {
+  position: relative;
+
+  height: 580px;
+  width: 528px;
+  border-radius: 4px;
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.modal-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: var(--white);
+  border: 0;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  right: 10px;
+  top: 10px;
 }
